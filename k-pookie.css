@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.1), transparent), linear-gradient(135deg, #0b0033, #1a0033, #2c004b, #1f0030, #00091a);
+    background-color: #000022;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    position: relative; /* Enable relative positioning */
+    padding: 20px 40px;
+    background-color: rgba(244, 244, 244, 0.2); /* Translucent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for night effect */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.curvy-heading {
+    font-size: 4em;
+    color: #FFFFFF; /* Bright white color */
+    font-family: 'Pacifico', cursive;
+    text-shadow: 
+                 1px 1px 2px #000000, /* Subtle black shadow for depth */
+                 2px 2px 4px rgba(0, 0, 0, 0.5); /* Additional shadow for emphasis */
+    margin: 0;
+    position: relative; /* Enable relative positioning for the emojis */
+}
+
+.curvy-heading::before, .curvy-heading::after {
+    content: "🐰";
+    font-size: 0.5em; /* Adjust emoji size as needed */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.curvy-heading::before {
+    left: -40px; /* Position the left emoji */
+}
+
+.curvy-heading::after {
+    right: -40px; /* Position the right emoji */
+}
+
+.meme-heading {
+    font-family: 'Pacifico', cursive; /* Same curvy font as header */
+    font-size: 2em; /* Slightly smaller than the header */
+    color: #FFFFFF; /* White color */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Space above the heading */
+    text-shadow: 1px 1px 2px #000000; /* Subtle shadow for depth */
+}
+
+.nav-links {
+    margin-top: 30px; /* Create space between header and navigation */
+    text-align: left;
+    padding-left: 20px; /* Indentation */
+    width: 100%; /* Make sure it spans the width of the page */
+    max-width: 600px; /* Limit the width to avoid excessive stretching */
+}
+
+.nav-links a {
+    color: #C0C0C0; /* Silvery-white color */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block; /* Each link on a new line */
+    margin: 5px 0;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #C0C0C0;
+    background-color: rgba(244, 244, 244, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 40px auto 20px;
+    width: 80%;
+}
